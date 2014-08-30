@@ -144,5 +144,6 @@ if __name__ == "__main__":
         print "Give me a period, candle size, pair, and account number!"
         sys.exit()
     else:
+        #10 S5 EUR_USD 8500841 (good example of what they are looking for)
         period, granularity, pair, account = sys.argv[1:]
         compareAndTrade(int(period), granularity, pair, account)
